@@ -1,0 +1,33 @@
+---
+description: Official GitHub, Vercel, and Supabase targets for StreamDeck — always use these, never create alternatives
+alwaysApply: true
+---
+
+# Official StreamDeck platform targets
+
+This repo has one official Git remote, one Vercel account/project, and one Supabase project. Use only these.
+
+## Git / pushes
+
+- Remote `origin` is `https://github.com/my1dad/streamdeck.git`
+- Default branch is `main`
+- Push only to this remote. Do not add other remotes or create a different GitHub repo.
+
+## Deploy
+
+- Vercel dashboard: [my1dad](https://vercel.com/my1dad)
+- Vercel project: `streamdeck` at [vercel.com/my1dad/streamdeck](https://vercel.com/my1dad/streamdeck)
+- Git integration is `my1dad/streamdeck`
+- Deploy only to this project. Do not create another Vercel team or project.
+
+## SQL / backend
+
+- Supabase URL: `https://qtmtxwjnipoxtqmxtwtb.supabase.co`
+- Project ref: `qtmtxwjnipoxtqmxtwtb`
+- All migrations, SQL, and client env (`NEXT_PUBLIC_SUPABASE_URL`) must use this project.
+- Do **not** use `https://xrwvaelhmibhslmfvxrs.supabase.co` or any other Supabase project.
+- If Supabase MCP `get_project_url` is not `https://qtmtxwjnipoxtqmxtwtb.supabase.co`, stop and reconnect. Do not run SQL.
+
+## Secrets
+
+- Do not commit `.env.local` or service-role keys.
